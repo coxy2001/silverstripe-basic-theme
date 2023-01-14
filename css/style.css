@@ -310,7 +310,7 @@ p {
 }
 @media (min-width: 768px) {
   .splide__arrow {
-    padding: 60px;
+    padding: 60px 30px;
   }
 }
 .splide__arrow--prev svg {
@@ -599,6 +599,12 @@ p {
 }
 .image-slider__title {
   color: #888;
+}
+
+.testimonials__item {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 2rem;
 }
 
 .userform__fields {
