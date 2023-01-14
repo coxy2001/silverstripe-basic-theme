@@ -1,7 +1,18 @@
 .testimonials {
     &__item {
-        padding-left: 6rem;
-        padding-right: 6rem;
         padding-bottom: 2rem;
+
+        @media (min-width: $md) {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
+
+    .splide__arrows {
+        display: none;
+
+        @media (min-width: $md) {
+            display: flex;
+        }
     }
 }
