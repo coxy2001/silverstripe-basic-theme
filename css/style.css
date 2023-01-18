@@ -388,6 +388,15 @@ p {
 .element--bg-secondary {
   background-color: #888;
 }
+.element--title-left .element__title {
+  text-align: left;
+}
+.element--title-centre .element__title {
+  text-align: center;
+}
+.element--title-right .element__title {
+  text-align: right;
+}
 
 .accordion-item {
   margin-bottom: 1rem;
@@ -545,11 +554,20 @@ p {
     width: 25%;
   }
 }
-.icons__image {
-  width: 100%;
+.icons__link {
+  color: inherit;
+  text-decoration: none;
 }
-.icons__block-link-holder {
-  text-align: center;
+.icons__card {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border-radius: 1rem;
+}
+.icons__image {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 80%;
 }
 
 .image-content__row {
