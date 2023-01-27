@@ -38,4 +38,16 @@
     &--bg-secondary {
         background-color: $secondary;
     }
+
+    &__title {
+        .element--title-left & {
+            text-align: left;
+        }
+        .element--title-centre & {
+            text-align: center;
+        }
+        .element--title-right & {
+            text-align: right;
+        }
+    }
 }
