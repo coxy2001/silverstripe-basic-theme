@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
 *,
 *::before,
@@ -137,7 +138,13 @@ p {
     justify-content: right;
   }
 }
+.nav__item {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
 .nav__link {
+  display: block;
   color: #fff;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -145,8 +152,30 @@ p {
 .nav__link:hover {
   color: #cccccc;
 }
+.nav__link--child {
+  color: #fff;
+}
 .nav__link--current {
   color: #ffff00;
+}
+.nav__link--has-children::after {
+  content: "▼";
+  font-size: 0.75rem;
+  position: relative;
+  top: -2px;
+  left: 4px;
+}
+.nav__children {
+  display: none;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #33a0ff;
+  border-radius: 0.5rem;
+}
+.nav__item:hover .nav__children {
+  display: block;
 }
 
 .footer {

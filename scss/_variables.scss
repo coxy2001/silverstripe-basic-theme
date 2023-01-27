@@ -1,0 +1,60 @@
+// Fonts
+$font-family: "Noto Sans JP", sans-serif !default;
+$font-family-heading: $font-family !default;
+
+// Breakpoints
+$sm: 576px !default;
+$md: 768px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1400px !default;
+
+// Headings
+$h1-font-size: 3rem !default;
+$h2-font-size: 2.5rem !default;
+$h3-font-size: 2rem !default;
+$h4-font-size: 1.5rem !default;
+$h5-font-size: 1.25rem !default;
+$h6-font-size: 1rem !default;
+
+// Theme Colours
+$light: #fff !default;
+$dark: #000 !default;
+
+$primary: #0088ff !default;
+$secondary: #888 !default;
+
+$success: #00ad00 !default;
+$danger: #e30c0c !default;
+$warning: #d1d100 !default;
+$info: #00d6d6 !default;
+
+// Page Colours
+$body-colour: $dark !default;
+$body-bg: #fff !default;
+
+$heading-colour: $dark !default;
+$link-colour: $primary !default;
+
+$header-colour: $light !default;
+$header-bg: $primary !default;
+
+$nav-link-colour: $light !default;
+$nav-link-hover-colour: darken($nav-link-colour, 20%) !default;
+$nav-link-current-colour: #ffff00 !default;
+$nav-link-child-colour: $nav-link-colour !default;
+$nav-children-bg: lighten($primary, 10%) !default;
+
+$footer-bg: #3c4147 !default;
+$footer-colour: #fff !default;
+$footer-link-colour: $footer-colour !default;
+
+// Component Colours
+$accordion-colour: $light !default;
+$accordion-bg: $secondary !default;
+
+$banner-colour: #888 !default;
+
+$splide-arrow-colour: $primary !default;
+$splide-page-colour: #ccc !default;
+$splide-page-active-colour: $primary !default;

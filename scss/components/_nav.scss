@@ -8,7 +8,14 @@
         justify-content: right;
     }
 
+    &__item {
+        position: relative;
+        color: $nav-link-colour;
+        text-decoration: none;
+    }
+
     &__link {
+        display: block;
         color: $nav-link-colour;
         padding: 0.5rem 1rem;
         text-decoration: none;
@@ -17,8 +24,34 @@
             color: $nav-link-hover-colour;
         }
 
+        &--child {
+            color: $nav-link-child-colour;
+        }
+
         &--current {
             color: $nav-link-current-colour;
+        }
+
+        &--has-children {
+            &::after {
+                content: "\25BC";
+                font-size: 0.75rem;
+                position: relative;
+                top: -2px;
+                left: 4px;
+            }
+        }
+    }
+
+    &__children {
+        display: none;
+        position: absolute;
+        width: max-content;
+        background-color: $nav-children-bg;
+        border-radius: 0.5rem;
+
+        .nav__item:hover & {
+            display: block;
         }
     }
 }
