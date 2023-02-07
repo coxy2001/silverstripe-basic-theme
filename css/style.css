@@ -161,7 +161,6 @@ p {
 .nav__children {
   display: none;
   position: absolute;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   background-color: #33a0ff;
@@ -205,7 +204,6 @@ p {
 .btn {
   display: inline-block;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 0.5rem 1rem;
@@ -216,7 +214,6 @@ p {
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   color: #fff;
   border-radius: 0.25rem;
@@ -510,6 +507,24 @@ p {
   .content__col {
     margin-bottom: 0;
   }
+}
+
+.embed__ratio-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.embed__holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.embed__holder > * {
+  width: 100%;
+  height: 100%;
 }
 
 .gallery__grid {
