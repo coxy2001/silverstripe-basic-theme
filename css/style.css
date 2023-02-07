@@ -606,6 +606,9 @@ p {
   margin-bottom: 1rem;
   width: 80%;
 }
+.icons__block-link-holder {
+  text-align: center;
+}
 
 .image-content__row {
   display: flex;
