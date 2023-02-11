@@ -659,6 +659,65 @@ p {
   color: #888;
 }
 
+.parallax {
+  position: relative;
+}
+.parallax__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax--opacity-low .parallax__image {
+  opacity: 0.9;
+}
+.parallax--opacity-medium .parallax__image {
+  opacity: 0.75;
+}
+.parallax--opacity-high .parallax__image {
+  opacity: 0.6;
+}
+.parallax__container {
+  position: relative;
+  height: 100vh;
+}
+.parallax--small .parallax__container {
+  height: 60vh;
+}
+.parallax--medium .parallax__container {
+  height: 80vh;
+}
+.parallax__content {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  right: 1rem;
+  transform: translate(0, -50%);
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .parallax--left .parallax__content, .parallax--centre .parallax__content, .parallax--right .parallax__content {
+    min-width: 576px;
+    width: 50%;
+  }
+  .parallax--left .parallax__content {
+    right: auto;
+  }
+  .parallax--centre .parallax__content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .parallax--right .parallax__content {
+    left: auto;
+  }
+}
+
 .testimonials__item {
   padding-bottom: 2rem;
 }
