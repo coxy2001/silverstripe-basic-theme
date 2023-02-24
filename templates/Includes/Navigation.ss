@@ -15,4 +15,4 @@
             <% end_if %>
         </div>
     <% end_loop %>
-</div>
+</nav>

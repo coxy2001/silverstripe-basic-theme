@@ -119,6 +119,9 @@ p {
   color: #fff;
 }
 .header__logo {
+  height: auto;
+  max-width: 100%;
+  max-height: 80px;
   padding: 0.5rem;
 }
 .header__nav {
