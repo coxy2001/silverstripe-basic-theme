@@ -401,9 +401,21 @@ p {
 .element--text-dark * {
   color: #000;
 }
-.element--bg-primary, .element--bg-secondary {
+.element--text-primary * {
+  color: #0088ff;
+}
+.element--text-secondary * {
+  color: #888;
+}
+.element--bg-light, .element--bg-dark, .element--bg-primary, .element--bg-secondary {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.element--bg-light {
+  background-color: #fff;
+}
+.element--bg-dark {
+  background-color: #000;
 }
 .element--bg-primary {
   background-color: #0088ff;
