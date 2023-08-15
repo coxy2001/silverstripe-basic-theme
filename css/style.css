@@ -752,11 +752,25 @@ p {
     padding-right: 6rem;
   }
 }
-.testimonials__content::before {
-  content: "“";
+.testimonials__content {
+  position: relative;
 }
-.testimonials__content::after {
-  content: "”";
+@media (min-width: 768px) {
+  .testimonials__content::before, .testimonials__content::after {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+  }
+  .testimonials__content::before {
+    content: "“";
+    top: 0;
+    left: -1rem;
+  }
+  .testimonials__content::after {
+    content: "”";
+    bottom: -0.5rem;
+    right: -1rem;
+  }
 }
 .testimonials__name {
   font-weight: 500;
