@@ -740,6 +740,22 @@ p {
     padding-right: 6rem;
   }
 }
+.testimonials__content::before {
+  content: "“";
+}
+.testimonials__content::after {
+  content: "”";
+}
+.testimonials__name {
+  font-weight: 500;
+}
+.testimonials__position {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.testimonials__affiliation {
+  font-size: 0.9rem;
+}
 .testimonials .splide__arrows {
   display: none;
 }

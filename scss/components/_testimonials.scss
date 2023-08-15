@@ -8,6 +8,28 @@
         }
     }
 
+    &__content {
+        &::before {
+            content: "\201C";
+        }
+        &::after {
+            content: "\201D";
+        }
+    }
+
+    &__name {
+        font-weight: 500;
+    }
+
+    &__position {
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+
+    &__affiliation {
+        font-size: 0.9rem;
+    }
+
     .splide__arrows {
         display: none;
 
