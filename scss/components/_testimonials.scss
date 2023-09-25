@@ -9,11 +9,25 @@
     }
 
     &__content {
-        &::before {
-            content: "\201C";
-        }
-        &::after {
-            content: "\201D";
+        position: relative;
+
+        @media (min-width: $md) {
+            &::before,
+            &::after {
+                font-size: 1.5rem;
+                font-weight: 500;
+                position: absolute;
+            }
+            &::before {
+                content: "\201C";
+                top: 0;
+                left: -1rem;
+            }
+            &::after {
+                content: "\201D";
+                bottom: -0.5rem;
+                right: -1rem;
+            }
         }
     }
 
