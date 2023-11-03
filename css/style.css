@@ -794,29 +794,30 @@ p {
   margin-bottom: 0.5rem;
 }
 .userform__field-holder input,
-.userform__field-holder select {
+.userform__field-holder select,
+.userform__field-holder textarea {
   display: inline-block;
   width: 100%;
-  height: calc(2.25rem + 2px);
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 1px solid #000;
   border-radius: 0.25rem;
+  resize: vertical;
 }
 .userform__field-holder input[type=file] {
   height: auto;
   border: 2px dashed #999;
 }
 .userform__label {
-  display: inline-block;
+  display: block;
   margin-bottom: 0.5rem;
 }
 .userform__right-label {
   float: right;
 }
 .userform .message {
-  display: inline-block;
+  display: block;
   margin-bottom: 0.5rem;
 }
 .userform .error {

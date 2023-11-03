@@ -5,15 +5,17 @@
 
     &__field-holder {
         input,
-        select {
+        select,
+        textarea {
             display: inline-block;
             width: 100%;
-            height: calc(1.25rem + 1rem + 2px);
+            // height: calc(1.25rem + 1rem + 2px);
             margin-bottom: 0.5rem;
             padding: 0.5rem 1rem;
             font-size: 1rem;
             border: 1px solid #000;
             border-radius: 0.25rem;
+            resize: vertical;
         }
 
         input[type="file"] {
@@ -23,7 +25,7 @@
     }
 
     &__label {
-        display: inline-block;
+        display: block;
         margin-bottom: 0.5rem;
     }
 
@@ -32,7 +34,7 @@
     }
 
     .message {
-        display: inline-block;
+        display: block;
         margin-bottom: 0.5rem;
     }
 
