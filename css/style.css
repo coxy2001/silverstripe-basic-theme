@@ -801,6 +801,7 @@ p {
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  font-family: "Verdana", sans-serif;
   border: 1px solid #000;
   border-radius: 0.25rem;
   resize: vertical;
